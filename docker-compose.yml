@@ -1,0 +1,10 @@
+services:
+
+ python:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: project-python
+    command: main.py
+    volumes:
+    - ./app:/app
