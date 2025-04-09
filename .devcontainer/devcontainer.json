@@ -1,7 +1,7 @@
 {
   "name": "docker-alpine-python",
   "build": {
-    "dockerfile": "Dockerfile",
+    "dockerfile": "../Dockerfile",
     "context": ".."
   },
   "runArgs": ["--init"],
