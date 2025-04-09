@@ -5,7 +5,7 @@
     "context": ".."
   },
   "runArgs": ["--init"],
-  "postCreateCommand": "docker-compose up -d",
+  "postCreateCommand": "python3 app/main.py",
   "customizations": {
     "vscode": {
       "settings": {
