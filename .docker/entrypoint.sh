@@ -5,7 +5,7 @@ set -e
 if [ "$1" = "build" ]; then
     mkdir -p /build /dist
     chmod -R 777 /build /dist
-    pyinstaller --onefile --distpath /dist --workpath /build --specpath /build main.py
+    pyinstaller --clean --onefile --distpath /dist --workpath /build --specpath /build main.py
 elif [ "$1" = "run" ]; then
     /entrypoint.sh build
     /entrypoint.sh main

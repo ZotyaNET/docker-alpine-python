@@ -1,7 +1,5 @@
-from lib.zpylib import print_hi
+from app.controller.base_controller import BaseController
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    controller = BaseController("PyCharm")
+    controller.run()
