@@ -1,10 +1,11 @@
 services:
-
  python:
     build:
       context: ./
       dockerfile: Dockerfile
     container_name: project-python
-    command: main.py
+    command: run
     volumes:
-    - ./app:/app
+    - ./build:/build:rw
+    - ./dist:/dist:rw
+    - ./src:/src:rw
